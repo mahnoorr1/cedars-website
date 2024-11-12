@@ -1,0 +1,11 @@
+
+.transition-container {
+  opacity: 0; 
+  transform: translateY(50px);
+  transition: opacity var(--duration) ease, transform var(--duration) ease; 
+}
+
+.transition-container.fade-in {
+  opacity: 1; 
+  transform: translateY(0);
+}

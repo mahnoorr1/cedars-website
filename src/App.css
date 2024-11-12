@@ -1,38 +1,266 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
 .App {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.logo-container {
+  background-color:  var(--color-black);
+  padding: 20px 100px;
+  border-bottom-right-radius: 100px;
+}
+
+/* How We Work Section */
+.how-we-work {
+  padding: 40px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.how-we-work h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.steps {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.step {
+  width: 150px;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects Section */
+.projects {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.project-item {
+  width: 250px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.project-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-item h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 40px 0;
+  text-align: center;
+  background: #222;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.why-choose-us h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.reasons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.reason {
+  background: #333;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Success Stories Section */
+.success-stories {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.success-stories h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial {
+  background: #ffffff;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonial h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.testimonial p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Tools Section */
+.tools {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.tools h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tool-item {
+  width: 120px;
+  text-align: center;
+}
+
+.tool-item img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.tool-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Contact Form Section */
+.contact-form {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f0f4f8;
+  border-radius: 8px;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: var(--color-accent);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.paragraph {
+  font-size: 1.5vw;
+  max-width: 800px;
+  line-height: 2vw;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .services-list,
+  .steps,
+  .project-list,
+  .reasons,
+  .testimonials,
+  .tools-list {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .service-item, .step, .project-item, .reason, .testimonial, .tool-item {
+    width: 100%;
   }
 }
+

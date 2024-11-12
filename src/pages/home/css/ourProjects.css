@@ -1,0 +1,126 @@
+/* ourProjects.css */
+/* projects Section */
+.projects {
+    padding-top: 40px;
+    padding-inline: 40px;
+    padding-bottom: 20px;
+    text-align: start;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    gap: 20px;
+    grid-auto-flow: dense;
+}
+
+.project-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+.hover-buttons {
+    position: absolute; 
+    bottom: 30px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: grid; 
+     grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+    border-radius: 100px; 
+    padding: 10px; 
+    max-width: 45vw;
+}
+
+/* Button Styles */
+.project-button {
+    border: none; 
+    background-color: transparent; 
+    padding: 15px 20px; 
+    border-radius: 100px; 
+    cursor: pointer; 
+    width: 120px;
+    transition: background-color 0.3s;
+    background-color: rgba(62, 61, 61, 0.3); 
+    backdrop-filter: blur(20px); 
+    color: white;
+}
+
+.project-button:hover {
+    background-color: rgba(169, 167, 167, 0.2); 
+    color: white; 
+    font-weight: bold;
+}
+
+.project-item img {
+    width: 95%; 
+    height: 87%; 
+    object-fit: cover; 
+}
+
+.project-item:nth-child(1) {
+    grid-row: span 1;
+    height: 65vh; 
+}
+
+.project-item:nth-child(2) {
+    grid-row: span 2; 
+    height: 90vh; 
+}
+.project-item:nth-child(2) img,
+.project-item:nth-child(3) img
+{
+    grid-row: span 2; 
+    height: 90vh; 
+    height: 91%; 
+}
+
+.project-item:nth-child(3) {
+    grid-row: span 2; 
+    height: 90vh; 
+}
+
+.project-item:nth-child(4) {
+    grid-row: span 1; 
+    height: 65vh; 
+}
+
+/* Responsive Image */
+.project-item img {
+    width: 100%; 
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .projects-list {
+        grid-template-columns: 1fr; 
+    }
+
+    .project-item {
+        width: 100%;
+        grid-row: auto; 
+    }
+    .hover-buttons {
+        display: grid; 
+        justify-content: center;
+         grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 900px) {
+    .projects-list {
+        grid-template-columns: 1fr; 
+    }
+
+    .project-item {
+        width: 100%;
+        grid-row: auto; 
+    }
+    .hover-buttons {
+        display: grid; 
+        justify-content: center;
+         grid-template-columns: repeat(4, 1fr);
+    }
+}

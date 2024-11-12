@@ -1,0 +1,21 @@
+.customer-stories {
+    padding-top: 40px;
+    padding-inline: 40px;
+    padding-bottom: 40px;
+    text-align: start;
+}
+
+.stories-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr; 
+    gap: 20px;
+    justify-content: center;
+    grid-auto-flow: dense;
+}
+@media (max-width: 700px) {
+    .stories-list {
+      grid-template-columns: 1fr; 
+    }
+  }
+  
