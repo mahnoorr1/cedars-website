@@ -32,3 +32,12 @@
     line-height: 28px;
     color: white;
 }
+
+@media(max-width: 850px){
+    .why-us-list3 {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .why-us-list5 {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+} 

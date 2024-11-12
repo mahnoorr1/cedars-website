@@ -1,3 +1,4 @@
+import Footer from "../footer/footer";
 import CustomerStories from "./sections/customerStories";
 import Header from "./sections/header";
 import HowWeWork from "./sections/howWeWork";
@@ -25,6 +26,8 @@ const Home = () => {
             <CustomerStories/>
             <br/><br/>
             <ToolsAndTechnologies/>
+            <br/><br/>
+            <Footer/>
         </div>
     );
 }

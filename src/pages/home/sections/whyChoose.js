@@ -20,7 +20,7 @@ const WhyChooseCedars = () => {
                 <Heading text={"Why Choose Cedars Digital"} color={"white"}/>
             </BottomToTopTransition>
             <BottomToTopTransition>
-                <div style={{"color" : "white"}} className="paragraph">Cedars Digital Team always handles projects with great responsibility following User Centric approach</div>
+                <div style={{"color" : "white"}} >Cedars Digital Team always handles projects with great responsibility following User Centric approach</div>
             </BottomToTopTransition>
             <br/><br/>
             <BottomToTopTransition>
