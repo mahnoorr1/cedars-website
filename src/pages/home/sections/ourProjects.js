@@ -1,5 +1,6 @@
 // OurProjects.js
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Heading from '../../../components/heading';
 import BottomToTopTransition from '../../../components/transitionContainer';
 
@@ -13,6 +14,7 @@ import booking_app from '../../../assets/images/booking_app_poster.png';
 
 const OurProjects = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
+    const navigate = useNavigate();
 
     const projects = [
         { title: "Omnichannel Loyalty Apps", image: loyalty_app },
@@ -27,6 +29,10 @@ const OurProjects = () => {
         { index: 3, points: ["Real Estate", "Virtual Tour"] },
         { index: 4, points: ["Hospitality", "Qatar based"] },
     ];
+
+    const goToVirtualAssistant = () => {
+        navigate('/virtual-assistant');
+      };
 
     return (
         <section className='projects'>
@@ -47,7 +53,7 @@ const OurProjects = () => {
                                     {hoverPoints[index].points.map((point, pointIndex) => (
                                         <button key={pointIndex} className="project-button">{point}</button>
                                     ))}
-                                    <button className="project-button">Explore Project</button>
+                                    <button onClick={goToVirtualAssistant} className="project-button">Explore Project</button>
                                 </div>
                             )}
                         </div>

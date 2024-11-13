@@ -32,6 +32,7 @@
     font-size: 3vh;
     font-weight: 500;
     margin-bottom: 10vh;
+    width: 70%;
   }
   .svg-radial-container {
     position: fixed;
