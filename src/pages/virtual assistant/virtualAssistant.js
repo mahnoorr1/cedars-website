@@ -34,6 +34,10 @@ import feature10 from '../../assets/images/vr-feature10.png';
 import feature11 from '../../assets/images/vr-feature11.png';
 import feature12 from '../../assets/images/vr-feature12.png';
 
+import developedSolution1 from '../../assets/images/develope-solution1.png';
+import developedSolution2 from '../../assets/images/develope-solution2.png';
+import developedSolution3 from '../../assets/images/develope-solution3.png';
+
 
 const VirtualAssistant = () => {
     var tags= ["Real Estate App", "Virtual Assistant", "User Friendly", "3D Real Estate", "3D Apartment Tour ",];
@@ -84,6 +88,14 @@ const VirtualAssistant = () => {
         {title: "Broader Audience Reach", description: "The platform’s integration with digital marketing channels allows developers to reach a wider, global audience, attracting potential buyers who may not be able to visit properties in person"},
         {title: "Cost-Effective Marketing", description: "Virtual tours reduce the need for physical property showings, saving time and resources for both developers and potential buyers, while also providing a more scalable and efficient way to showcase properties"},
     ];
+
+    var developedSolution = [
+        {title: "Exterior View of the Real Estate Building with Apartments details", image: developedSolution1},
+        {title: "Detailed View of Unique Floor Plans", image: developedSolution2},
+        {title: "3D Tour of an Apartment covering all the blocks", image: developedSolution3},
+    ];
+
+    var developedSolutionTags = ["Web App", "Design & Development", "Based in Qatar",];
 
     return (
         <body>
@@ -191,6 +203,37 @@ const VirtualAssistant = () => {
                 
             </section>
             </BottomToTopTransition>
+            <br/><br/><br/>
+
+            <BottomToTopTransition>
+                <section  className="section">
+                    <Heading text={"Our Developed Solution"} color={'black'}/>
+                </section>
+            </BottomToTopTransition>
+            <BottomToTopTransition>
+                <div className="developed-solution">
+                    <div className="developed-solution-taglist">
+                        {
+                            developedSolutionTags.map((tag)=> (
+                                <div className="developed-solution-tag">{tag}</div>
+                            ))
+                        }
+                    </div>
+                    <br/>
+                    <div className="developed-solution-list">
+                        {
+                            developedSolution.map((item)=> (
+                                <div className="developed-solution-item">
+                                    <div className="developed-solution-text">{item.title}</div>
+                                    <img src = {item.image}></img>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+            
+            </BottomToTopTransition>
+                
             <br/><br/><br/>
             <Footer/>
         </body>
