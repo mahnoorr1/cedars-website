@@ -21,7 +21,7 @@ const Header = () => {
         <div className='svg-radial-container'>
          <RadialImage />
         </div>
-        <BottomToTopTransition >
+        <BottomToTopTransition>
          <header className="header">
             <div className='header-heading'>Providing User-Centric</div>
             <div className='gradient-text'>Solutions for Amazing Ideas</div>
