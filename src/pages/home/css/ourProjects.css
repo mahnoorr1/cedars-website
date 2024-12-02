@@ -96,6 +96,10 @@
 }
 
 @media (max-width: 900px) {
+    .project-item {
+        height: auto !important;
+    }
+
     .projects-list {
         grid-template-columns: 1fr; 
     }

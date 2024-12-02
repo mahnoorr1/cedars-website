@@ -6,6 +6,10 @@
 .menu-bar-btn {
     display: none !important;
 }
+
+.hover-buttons-mobile {
+    display: none !important;
+}
 }
 
 @media only screen and (max-width: 991px) { 
@@ -140,6 +144,27 @@ nav.navbar {
 
 .work-container img {
     width: 70px;
+}
+
+.project-item img {
+    width: 100% !important;
+    height: initial !important;
+}
+
+.hover-buttons.hover-buttons-mobile {
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    transform: none !important;
+    left: inherit !important;
+    bottom: inherit;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.hover-buttons.hover-buttons-mobile button.project-button {
+    width: 100%;
 }
 
 }

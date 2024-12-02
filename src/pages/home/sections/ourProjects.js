@@ -56,6 +56,12 @@ const OurProjects = () => {
                                     <button onClick={goToVirtualAssistant} className="project-button">Explore Project</button>
                                 </div>
                             )}
+                            <div className="hover-buttons hover-buttons-mobile">
+                                {hoverPoints[index].points.map((point, pointIndex) => (
+                                    <button key={pointIndex} className="project-button">{point}</button>
+                                ))}
+                                <button onClick={goToVirtualAssistant} className="project-button">Explore Project</button>
+                            </div>
                         </div>
                     ))}
                 </div>
