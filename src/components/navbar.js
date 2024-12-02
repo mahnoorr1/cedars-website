@@ -37,7 +37,7 @@ function Navbar() {
         <div className="navbar-container">
           <ul className="navbar-links">
             <li onClick={() => setVisible(false)}><a href="#about">About</a></li>
-            <li onClick={() => setVisible(false)}><a href="#products">products</a></li>
+            <li onClick={() => setVisible(false)}><a href="#products">Products</a></li>
             <li onClick={() => setVisible(false)}><a href="#services">Services</a></li>
           </ul>
 
