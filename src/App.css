@@ -1,9 +1,11 @@
 /* General Reset */
-* {
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
 }
 
 .App {
@@ -11,6 +13,9 @@
   margin: 0 auto;
 }
 
+button {
+  font-family: "Parkinsans", sans-serif;
+}
 
 /* Header Section */
 .header {

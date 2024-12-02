@@ -30,21 +30,23 @@
   
   .service-item:nth-child(2) {
     grid-row: span 2; 
-    height: 91vh; 
-  }
-  .service-item:nth-child(3) {
-    grid-row: span ; 
-    height: 30vh; 
-  }
-  .service-item:nth-child(4) {
-    grid-row: span 2; 
-    height: 65vh; 
-  }
-  .service-item:nth-child(5) {
-    grid-row: span 1; 
-    height: 65vh; 
+    height: auto; 
   }
 
+  .service-item:nth-child(3) {
+    grid-row: span ; 
+    height: auto; 
+  }
+
+  .service-item:nth-child(4) {
+    grid-row: span ; 
+    height: auto; 
+  }
+
+  .service-item:nth-child(5) {
+    grid-row: span 1; 
+    height: auto; 
+  }
   
   /* Responsive Image */
   .service-item img {
