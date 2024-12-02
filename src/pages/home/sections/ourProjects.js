@@ -49,7 +49,7 @@ const OurProjects = () => {
                             <div className='card-heading'>{project.title}</div>
                             <img src={project.image} alt={project.title} />
                             {hoveredIndex === index && (
-                                <div className="hover-buttons">
+                                <div className="hover-buttons hover-buttons-desktop">
                                     {hoverPoints[index].points.map((point, pointIndex) => (
                                         <button key={pointIndex} className="project-button">{point}</button>
                                     ))}

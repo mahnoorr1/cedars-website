@@ -12,6 +12,12 @@
 }
 }
 
+@media only screen and (max-width: 1280px) { 
+    .hover-buttons {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
 @media only screen and (max-width: 991px) { 
 .navbar-container .navbar-links {
     display: none !important;
@@ -167,4 +173,7 @@ nav.navbar {
     width: 100%;
 }
 
+.hover-buttons-desktop {
+    display: none !important;
+}
 }
