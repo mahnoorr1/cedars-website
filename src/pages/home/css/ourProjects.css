@@ -29,11 +29,11 @@
     left: 50%; 
     transform: translateX(-50%); 
     display: grid; 
-     grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px; 
     border-radius: 100px; 
     padding: 10px; 
-    max-width: 45vw;
+    max-width: 100%;
 }
 
 /* Button Styles */
@@ -43,7 +43,8 @@
     padding: 15px 20px; 
     border-radius: 100px; 
     cursor: pointer; 
-    width: 120px;
+    width: auto;
+    min-width: 150px;
     transition: background-color 0.3s;
     background-color: rgba(62, 61, 61, 0.3); 
     backdrop-filter: blur(20px); 
