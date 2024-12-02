@@ -41,6 +41,7 @@
 .main {
     padding-top: 0px !important;
     padding-inline: 15px !important;
+    margin-bottom: 0 !important;
 }
 
 .work-proposition-card {
@@ -130,5 +131,13 @@ nav.navbar {
     padding-top: 70px;
 }
 
+.work-container {
+    width: 18vh !important;
+    height: 18vh !important;
+}
+
+.work-container img {
+    width: 70px;
+}
 
 }
