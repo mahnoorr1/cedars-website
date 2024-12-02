@@ -13,9 +13,26 @@
     justify-content: center;
     grid-auto-flow: dense;
 }
+
+.customer-stories .head h3 {
+  margin: 0;
+}
+
+.customer-stories .head .card-description {
+  margin-bottom: 0;
+}
+
+.customer-stories .content .card-description {
+  margin-bottom: 0;
+}
+
+.stories-list div {
+  height: 100%;
+}
+
 @media (max-width: 700px) {
     .stories-list {
       grid-template-columns: 1fr; 
     }
-  }
+}
   

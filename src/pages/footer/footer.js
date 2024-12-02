@@ -48,9 +48,9 @@ const Footer = () => {
                 </div>
                 <div className='column'>
                     <div className='card-heading'>Company</div>
-                    <a>About</a>
-                    <a>Projects</a>
-                    <a>Services</a>
+                    <a href='#about'>About</a>
+                    <a href='#products'>Products</a>
+                    <a href='#services'>Services</a>
                 </div>
                 <div className='column'>
                     <div className='card-heading'>Contact Us</div>

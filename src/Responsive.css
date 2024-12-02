@@ -88,4 +88,12 @@
     margin: 15px;
 }
 
+.strategy-item-text {
+    display: none !important;
+}
+
+.heading {
+    font-size: 30px !important;
+} 
+
 }

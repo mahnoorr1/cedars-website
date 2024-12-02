@@ -34,7 +34,14 @@
 .image-list img{
     width: 60px;
     height: 60px;
+}
 
+.tools-tech-section .card-heading {
+    margin-bottom: 5px;
+}
+
+.tools-tech-section .card-description {
+    margin-bottom: 0;
 }
 
 @media(max-width: 900px){

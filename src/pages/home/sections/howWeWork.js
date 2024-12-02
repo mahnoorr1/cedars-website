@@ -25,7 +25,7 @@ const HowWeWork = () => {
         {heading: "Data-Driven Growth", description: "We develop comprehensive go-to-market plans to drive product success, aligning marketing, sales, and operational efforts to ensure efficient product launches"},
     ];
     return(
-        <div className="main">
+        <div className="main" id="about">
             <BottomToTopTransition>
                 <Heading text={"How We Work"} color={"black"}/>
             </BottomToTopTransition>

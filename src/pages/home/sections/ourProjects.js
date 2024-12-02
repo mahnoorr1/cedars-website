@@ -35,7 +35,7 @@ const OurProjects = () => {
       };
 
     return (
-        <section className='projects'>
+        <section className='projects' id='products'>
             <BottomToTopTransition>
                 <Heading text={"Our Products that make a Difference"} color={"black"} />
             </BottomToTopTransition>

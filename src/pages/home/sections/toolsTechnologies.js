@@ -28,7 +28,7 @@ const ToolsAndTechnologies = () => {
         {title: "QA", subtitle: "Quality Assurance", images: [postman, selenium]},
     ];
     return (
-        <section className="tools-tech-section">
+        <section className="tools-tech-section" id="services">
             <BottomToTopTransition>
                 <Heading text={"Tools & Major Technologies We Use"} color={"black"}/>
             </BottomToTopTransition>

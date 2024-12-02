@@ -8,6 +8,11 @@ body {
   font-optical-sizing: auto;
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+}
+
 .App {
   width: 100%;
   margin: 0 auto;

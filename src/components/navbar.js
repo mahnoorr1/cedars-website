@@ -19,7 +19,7 @@ function Navbar() {
       <div className="navbar-container">
         <ul className="navbar-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#products">products</a></li>
           <li><a href="#services">Services</a></li>
         </ul>
 
