@@ -34,6 +34,7 @@
     margin-bottom: 10vh;
     width: 70%;
   }
+
   .svg-radial-container {
     position: fixed;
     right: 0px;
@@ -54,16 +55,17 @@
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   cursor: pointer;  
   border: none;                   
-  transition: all 0.3s ease;  
-  height: 7vh;  
-  width: 23vh;       
+  transition: all 0.3s ease;       
+}
+
+.get-quote-btn-banner {
+  height: 50px;
+  width: 150px;
 }
 
 .button-style:hover {
   background-color: var(--color-accent);            
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);  
-  width: 24vh;   
-  height: 7.5vh;
 }
 
 .button-style:active {

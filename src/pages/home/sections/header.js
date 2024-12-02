@@ -30,7 +30,7 @@ const Header = () => {
             <div className='header-heading'>Providing User-Centric</div>
             <div className='gradient-text'>Solutions for Amazing Ideas</div>
             <h3 className='subheading'>We provide excellence, leave your product<br/>success in our hands</h3>
-            <button className='button-style' style={{"borderRadius": "80px", "backgroundColor": "#71FA71"}}>Get a Quote</button>
+            <button className='button-style get-quote-btn-banner' style={{"borderRadius": "80px", "backgroundColor": "#71FA71"}}>Get a Quote</button>
             <div className="info">
             </div>  
         </header>
