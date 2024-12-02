@@ -37,7 +37,7 @@ const OurProjects = () => {
     return (
         <section className='projects'>
             <BottomToTopTransition>
-                <Heading text={"Our Projects that make a Difference"} color={"black"} />
+                <Heading text={"Our Products that make a Difference"} color={"black"} />
             </BottomToTopTransition>
             <BottomToTopTransition>
                 <div className="projects-list">
