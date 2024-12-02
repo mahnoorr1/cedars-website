@@ -36,9 +36,9 @@ function Navbar() {
       <Sidebar className='mobile-sidebar' visible={visible} position="right" onHide={() => setVisible(false)}>
         <div className="navbar-container">
           <ul className="navbar-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#products">products</a></li>
-            <li><a href="#services">Services</a></li>
+            <li onClick={() => setVisible(false)}><a href="#about">About</a></li>
+            <li onClick={() => setVisible(false)}><a href="#products">products</a></li>
+            <li onClick={() => setVisible(false)}><a href="#services">Services</a></li>
           </ul>
 
           <button className="quote-button">Get a Quote</button>

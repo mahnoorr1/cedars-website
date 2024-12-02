@@ -17,9 +17,12 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <div className="App">
         <Navbar/>
-        <BrowserRouter>
-          <AppRoutes />
-        </BrowserRouter>
+
+        <div className='content-wrapper'>
+          <BrowserRouter>
+            <AppRoutes />
+          </BrowserRouter>
+        </div>
     </div>
     </ThemeProvider>
     
