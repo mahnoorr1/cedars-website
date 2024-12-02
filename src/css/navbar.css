@@ -76,10 +76,6 @@ button.menu-bar-btn.p-button.p-component svg {
   
 /* Responsive Styling */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-  }
-
   .navbar-links {
     margin-top: 10px;
   }
