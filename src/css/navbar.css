@@ -73,6 +73,32 @@
 button.menu-bar-btn.p-button.p-component svg {
     stroke: #000;
 }
+
+.mobile-sidebar .socials {
+  margin: 0;
+  justify-content: center;
+}
+
+.mobile-sidebar .p-sidebar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mobile-sidebar button.p-sidebar-close.p-sidebar-icon.p-link {
+  background: #1df91d;
+  border-color: #1df91d;
+  padding: 0;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 6px;
+}
   
 /* Responsive Styling */
 @media (max-width: 768px) {

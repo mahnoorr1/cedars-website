@@ -96,4 +96,27 @@
     font-size: 30px !important;
 } 
 
+.mobile-sidebar ul.navbar-links {
+    display: flex !important;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.mobile-sidebar ul.navbar-links li {
+    background-color: var(--color-background);
+    padding: 22px 25px;
+    border-radius: 1000px;
+}
+
+.mobile-sidebar ul.navbar-links li a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    text-transform: capitalize;
+}
+
 }

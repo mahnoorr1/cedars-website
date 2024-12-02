@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import '../css/navbar.css';
 import logo from '../assets/images/logo.png';
+import instagram from '../assets/images/instagram.png';
+import linkedIn from '../assets/images/linkedIn.png';
+import twitter from '../assets/images/twitter.png';
 
 import { Sidebar } from 'primereact/sidebar';
 import { Button } from 'primereact/button';
@@ -30,12 +33,22 @@ function Navbar() {
         </Button>
       </div>
 
-      <Sidebar visible={visible} position="right" onHide={() => setVisible(false)}>
-          <h2>Sidebar</h2>
-          <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
+      <Sidebar className='mobile-sidebar' visible={visible} position="right" onHide={() => setVisible(false)}>
+        <div className="navbar-container">
+          <ul className="navbar-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">products</a></li>
+            <li><a href="#services">Services</a></li>
+          </ul>
+
+          <button className="quote-button">Get a Quote</button>
+        </div>
+
+        <div className='socials'>
+            <img src={linkedIn}></img>
+            <img src={instagram}></img>
+            <img src={twitter}></img>
+        </div>
       </Sidebar>
     </nav>
   );
