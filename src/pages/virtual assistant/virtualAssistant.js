@@ -98,13 +98,15 @@ const VirtualAssistant = () => {
     var developedSolutionTags = ["Web App", "Design & Development", "Based in Qatar",];
 
     return (
-        <body>
+        <main className="virtual-tour-assistant-wrapper">
             <div class="image-container">
-            <img src={cedarsMark} class="fixed-image" alt="Fixed Position Image" />
+                <img src={cedarsMark} class="fixed-image" alt="Fixed Position Image" />
             </div>
+
             <div className='svg-radial-container'>
-            <RadialImage />
+                <RadialImage />
             </div>
+
             <BottomToTopTransition>
             <header className="header">
                     <div className='header-heading'>3D Virtual Assistant</div>
@@ -116,7 +118,9 @@ const VirtualAssistant = () => {
                     </div>
                 </header>
             </BottomToTopTransition>
+
             <br/><br/><br/>
+
             <BottomToTopTransition>
                 <section className="section">
                     <Heading text= {"Project Challenges"} color={'black'}></Heading>
@@ -131,10 +135,13 @@ const VirtualAssistant = () => {
                     </div>
                 </section>
             </BottomToTopTransition>
+
             <BottomToTopTransition>
                 <img className="cover-image" src={DigitalTwinCover}></img>
             </BottomToTopTransition>
+
             <br/><br/><br/>
+
             <BottomToTopTransition>
                 <section className="section">
                     <Heading text= {"Our Solution"} color={'black'}></Heading>
@@ -150,6 +157,7 @@ const VirtualAssistant = () => {
             </BottomToTopTransition>
             
             <br/><br/><br/>
+
             <BottomToTopTransition>
             <section className="section">
                 <Heading text={"Rich Features of Our Solution"} color={'black'}/>
@@ -163,12 +171,14 @@ const VirtualAssistant = () => {
                 </div>
             </section>
             </BottomToTopTransition>
+
             <br/><br/><br/>
 
             <BottomToTopTransition>
             <section  className="section">
                 <Heading text={"How It Works"} color={'black'}/>
             </section>
+
             <div className="how-it-works">
                 <div className="how-it-work-list">
                     {
@@ -181,9 +191,10 @@ const VirtualAssistant = () => {
                     }
                 </div>
             </div>
-                
             </BottomToTopTransition>
+
             <br/><br/><br/>
+
             <BottomToTopTransition>
             <section className="section">
                 <Heading text={"Solution Benefits"} color={'black'}/>
@@ -200,9 +211,9 @@ const VirtualAssistant = () => {
                         }
                     </div>
                 </div>
-                
             </section>
             </BottomToTopTransition>
+
             <br/><br/><br/>
 
             <BottomToTopTransition>
@@ -210,6 +221,7 @@ const VirtualAssistant = () => {
                     <Heading text={"Our Developed Solution"} color={'black'}/>
                 </section>
             </BottomToTopTransition>
+
             <BottomToTopTransition>
                 <div className="developed-solution">
                     <div className="developed-solution-taglist">
@@ -231,12 +243,11 @@ const VirtualAssistant = () => {
                         }
                     </div>
                 </div>
-            
             </BottomToTopTransition>
                 
             <br/><br/><br/>
             <Footer/>
-        </body>
+        </main>
     );
 }
 

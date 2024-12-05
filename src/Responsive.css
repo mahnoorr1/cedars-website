@@ -19,6 +19,41 @@
 }
 
 @media only screen and (max-width: 991px) { 
+.virtual-tour-assistant-wrapper .header {
+    padding: 40px 15px;
+    padding-bottom: 0;
+}
+
+.virtual-tour-assistant-wrapper .header h3.subheading {
+    width: 100%;
+    font-size: 16px !important;
+    margin-bottom: 40px;
+}
+
+.virtual-tour-assistant-wrapper .header .header-heading {
+    font-size: 35px;
+}
+
+.virtual-tour-assistant-wrapper .feature-item {
+    padding: 5px;
+}
+
+.virtual-tour-assistant-wrapper .feature-item h3 {
+    margin-bottom: 0 !important;
+}
+
+.virtual-tour-assistant-wrapper .tags-list {
+    gap: 5px;
+}
+
+.virtual-tour-assistant-wrapper section.section {
+    padding: 0px 15px;
+}
+
+.virtual-tour-assistant-wrapper .how-it-works {
+    padding: 40px 15px;
+}
+
 .navbar-container .navbar-links {
     display: none !important;
 }
