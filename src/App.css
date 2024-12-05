@@ -8,6 +8,31 @@ body {
   font-optical-sizing: auto;
 }
 
+body::-webkit-scrollbar {
+  width: 14px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #00a14b !important;
+  border-radius: 0px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgb(237, 237, 237);
+}
+
+/* Style the top arrow button */
+body::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="%231ABBAC" d="M7 14l5-5 5 5z"/></svg>') no-repeat center center;
+  background-size: cover;
+}
+
+/* Style the bottom arrow button */
+body::-webkit-scrollbar-button:single-button:vertical:increment {
+  background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="%231ABBAC" d="M7 10l5 5 5-5z"/></svg>') no-repeat center center;
+  background-size: cover;
+}
+
 a {
   color: #000;
   text-decoration: none;
@@ -218,6 +243,11 @@ button {
   font-size: 1.5vw;
   max-width: 800px;
   line-height: 2vw;
+}
+
+.contact-form input, .contact-form textarea {
+  font-family: "Parkinsans", sans-serif;
+  font-weight: 400;
 }
 
 /* Responsive Styling */

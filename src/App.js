@@ -1,5 +1,6 @@
 import './App.css';
 import './Responsive.css';
+import 'primeflex/primeflex.css';
 import { useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
 import theme from './styles/theme';
