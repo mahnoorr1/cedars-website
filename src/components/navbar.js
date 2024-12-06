@@ -38,6 +38,12 @@ function Navbar() {
       </div>
 
       <Sidebar className='mobile-sidebar' visible={isSidebarVisible} position="right" onHide={() => setSidebarVisible(false)}>
+        <div className='logo-container'>
+            <div className="navbar-logo">
+                <img src={logo} alt="CEDARS Logo" />
+            </div>
+        </div>
+        
         <div className="navbar-container">
           <ul className="navbar-links">
             <li onClick={() => setSidebarVisible(false)}><a href="#about">About</a></li>

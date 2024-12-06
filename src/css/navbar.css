@@ -74,6 +74,15 @@ button.menu-bar-btn.p-button.p-component svg {
     stroke: #000;
 }
 
+.mobile-sidebar .p-sidebar-content .logo-container {
+  position: absolute;
+  top: 20px;
+}
+
+.mobile-sidebar {
+  width: 100% !important;
+}
+
 .mobile-sidebar .socials {
   margin: 0;
   justify-content: flex-start;
@@ -83,6 +92,7 @@ button.menu-bar-btn.p-button.p-component svg {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 1rem;
 }
 
 .mobile-sidebar button.p-sidebar-close.p-sidebar-icon.p-link {
