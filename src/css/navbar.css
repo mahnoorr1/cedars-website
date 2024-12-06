@@ -197,6 +197,29 @@ button.send-button.p-button.p-component {
 .mobile-sidebar .p-sidebar-content .column .card-heading {
   margin-bottom: 0 !important;
 }
+
+.PhoneInput {
+    width: 100%;
+    box-shadow: none !important;
+    border-radius: 10px;
+    height: 50px;
+    background: transparent !important;
+    border: 1px solid #b0ffb080 !important;
+    color: #fff;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 200;
+    padding-left: 15px;
+}
+
+input.PhoneInputInput {
+    background: transparent !important;
+    box-shadow: none;
+    border: 0 !important;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 200;
+    color: #fff;
+    outline: none;
+}
   
 /* Responsive Styling */
 @media (max-width: 991px) {

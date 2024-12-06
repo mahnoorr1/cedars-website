@@ -11,9 +11,13 @@ import { Dialog } from 'primereact/dialog';
 import { InputText } from 'primereact/inputtext';
 import { InputTextarea } from 'primereact/inputtextarea';
 
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
+
 function Navbar() {
   const [isSidebarVisible, setSidebarVisible] = useState(false);
   const [isDialogVisible, setDialogVisible] = useState(false);
+  const [value, setValue] = useState();
 
   return (
     <nav className="navbar">
@@ -43,7 +47,7 @@ function Navbar() {
                 <img src={logo} alt="CEDARS Logo" />
             </div>
         </div>
-        
+
         <div className="navbar-container">
           <ul className="navbar-links">
             <li onClick={() => setSidebarVisible(false)}><a href="#about">About</a></li>
@@ -96,7 +100,7 @@ function Navbar() {
                 </div>
 
                 <div className='form-group'>
-                  <InputText type='number' placeholder='Mobile' />
+                  <PhoneInput placeholder="Enter phone number" value={value} onChange={setValue}/>
                 </div>
                 
                 <div className='form-group'>
