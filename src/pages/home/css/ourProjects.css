@@ -97,6 +97,34 @@
     border-radius: 8px;
 }
 
+.project-btn-container {
+    flex-direction: column;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-btn-tags {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.project-btn-tags button.project-button {
+    background-color: rgb(0 0 0 / 20%);
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    padding: 6px 8px;
+    width: auto !important;
+    min-width: auto;
+    cursor: default;
+    font-size: 13px;
+}
+
+button.project-button {
+    width: 100px !important;
+}
+
 @media (max-width: 900px) {
     .project-item {
         height: auto !important;

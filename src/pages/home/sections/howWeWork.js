@@ -9,6 +9,14 @@ import validation from '../../../assets/icons/validation.svg';
 import planning from '../../../assets/icons/planning.svg';
 import WorkPropositionCard from "../components/workPropositionCard";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+
 const HowWeWork = () => {
     const values = [
         {title: "Validation of Idea", icon: validation},
@@ -29,15 +37,42 @@ const HowWeWork = () => {
             <BottomToTopTransition>
                 <Heading text={"How We Work"} color={"black"}/>
             </BottomToTopTransition>
+
             <BottomToTopTransition>
-                <div className="work-items-list">
-                    
-                        {values.map((value, index) => (
-                            <HowWeWorkItem icon={value.icon} text={value.title}/>
-                        ))}
-                </div>
+                <Swiper
+                spaceBetween={20}
+                slidesPerView={1}
+                loop={true}
+                navigation
+                pagination={{ clickable: true }}
+                modules={[Navigation]}
+                breakpoints={{
+                    640: {
+                      slidesPerView: 1,
+                      spaceBetween: 20,
+                    },
+                    768: {
+                      slidesPerView: 1,
+                      spaceBetween: 40,
+                    },
+                    1024: {
+                      slidesPerView: 4,
+                      spaceBetween: 20,
+                    },
+                }}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+                >
+                    {values.map((value, index) => (
+                        <SwiperSlide key={index}>
+                            <HowWeWorkItem icon={value.icon} text={value.title} />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </BottomToTopTransition>
+
             <br/><br/><br/>
+
             <div className="work-proposition-grid">
             {
                 descriptiveValues.map((value)=> (
@@ -45,7 +80,6 @@ const HowWeWork = () => {
                 ))
             }
             </div>
-            
         </div>
     );
 }

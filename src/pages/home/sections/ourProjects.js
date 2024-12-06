@@ -49,17 +49,21 @@ const OurProjects = () => {
                             <div className='card-heading'>{project.title}</div>
                             <img src={project.image} alt={project.title} />
                             {hoveredIndex === index && (
-                                <div className="hover-buttons hover-buttons-desktop">
+                                <div className="hover-buttons hover-buttons-desktop project-btn-container">
+                                    <div className='project-btn-tags'>
                                     {hoverPoints[index].points.map((point, pointIndex) => (
                                         <button key={pointIndex} className="project-button">{point}</button>
                                     ))}
+                                    </div>
                                     <button onClick={goToVirtualAssistant} className="project-button">Explore Project</button>
                                 </div>
                             )}
-                            <div className="hover-buttons hover-buttons-mobile">
+                            <div className="hover-buttons hover-buttons-mobile project-btn-container">
+                                <div className='project-btn-tags'>
                                 {hoverPoints[index].points.map((point, pointIndex) => (
                                     <button key={pointIndex} className="project-button">{point}</button>
                                 ))}
+                                </div>
                                 <button onClick={goToVirtualAssistant} className="project-button">Explore Project</button>
                             </div>
                         </div>

@@ -70,6 +70,36 @@
     margin: 0 !important;
 }
 
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+    z-index: 1000; /* Ensure it appears on top of other elements */
+}
+
+.whatsapp-float a {
+    display: block;
+    width: 60px; /* Adjust button size */
+    height: 60px;
+    border-radius: 50%; /* Makes the button circular */
+    background-color: #25d366; /* WhatsApp green color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float img {
+    width: 100%; /* Make the icon fit inside the button */
+    height: 100%;
+    border-radius: 50%; /* Keeps the image circular */
+    padding: 10%;
+}
+
+.whatsapp-float a:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+  
+
 @media(max-width: 800px){
     .footer-content{
         display: grid;

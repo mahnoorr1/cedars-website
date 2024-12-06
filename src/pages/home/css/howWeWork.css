@@ -25,7 +25,7 @@
 .work-item-container {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 0px;
     align-items: center;
     text-align: center;
 
@@ -63,6 +63,32 @@
     align-items: center;
     text-align: center;
     line-height: 28px;
+}
+
+.swiper-button-next {
+    background: #3bcf5f !important;
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 4px;
+}
+
+.swiper-button-next::after {
+    font-size: 14px !important;
+    font-weight: 800;
+    color: #000 !important;
+}
+
+.swiper-button-prev {
+    background: #3bcf5f !important;
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 4px;
+}
+
+.swiper-button-prev::after {
+    font-size: 14px !important;
+    font-weight: 800;
+    color: #000 !important;
 }
 
 @media(max-width: 600px) {

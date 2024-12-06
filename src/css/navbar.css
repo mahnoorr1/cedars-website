@@ -76,7 +76,7 @@ button.menu-bar-btn.p-button.p-component svg {
 
 .mobile-sidebar .socials {
   margin: 0;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .mobile-sidebar .p-sidebar-content {
@@ -178,6 +178,14 @@ button.send-button.p-button.p-component {
   border-radius: 1000px;
   min-width: 180px;
   box-shadow: none;
+}
+
+.mobile-sidebar .p-sidebar-content .column {
+  margin: 0;
+}
+
+.mobile-sidebar .p-sidebar-content .column .card-heading {
+  margin-bottom: 0 !important;
 }
   
 /* Responsive Styling */

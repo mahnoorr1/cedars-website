@@ -59,8 +59,8 @@
 }
 
 .get-quote-btn-banner {
-  height: 50px;
-  width: 150px;
+  height: 50px !important;
+  width: 150px !important;
 }
 
 .button-style:hover {
